@@ -177,7 +177,7 @@ header ul > li > a:hover::before {
 
 @media (max-width: 767px) {
     .landing .container {
-        margin-top: 3rem;
+        margin-top: 4.2rem;
     }
 }
 
@@ -321,12 +321,19 @@ header ul > li > a:hover::before {
     margin-bottom: 25px;
 }
 
-.aboutMe .content .text span {
+.aboutMe .content .text .lang span {
     border: 2px solid var(--mainColor);
     padding: 5px 10px;
     border-radius: 10px;
     margin-right: 10px;
     font-size: 13px;
+}
+@media (max-width: 767px) {
+    .aboutMe .content .text .lang {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 .aboutMe .content .text a {
